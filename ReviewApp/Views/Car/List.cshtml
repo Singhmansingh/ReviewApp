@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ReviewApp.Models.Car>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+@foreach(var car in Model)
+            {
+                <p>@car.CarColor @car.CarMake</p>
+            }
